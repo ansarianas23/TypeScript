@@ -6,3 +6,15 @@
 
 * typeScript at the end converted into js or we can say transpiled into js
 * typescript is just a wrapper on top of javascript that provides us types safety so that we can error free code its just a development tool and not a programming language.
+
+// Data Types 
+
+// Number
+// Boolean
+// String
+// null 
+// undefined
+// void
+// object
+// Array 
+// tuples etc
