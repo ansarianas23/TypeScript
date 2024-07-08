@@ -43,6 +43,27 @@ function createProfile(user: User): User{
 
 createProfile({name: "Anas", email: "Anas@gmail.com", isActive: true});
 
+// --------------------------------------------------------------------------------------------
+
+// optional property and read only property
+type Employee = {
+    readonly _id : string
+    name: string
+    post: string
+    creditCardDetail?: string
+}
+
+let newEmployee: Employee = {
+    _id : "54321",
+    name: "Sam",
+    post: "React developer"
+}
+
+// we have not given creditCardDetail property in above object but still it is not complaining because it is marked as an optional
+
+newEmployee.name = "Sam Sharma"
+// newEmployee._id = "123"     // it is not allowed to change as it is read only
+
 export {}
 
 

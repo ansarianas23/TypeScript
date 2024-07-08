@@ -28,3 +28,10 @@ function createProfile(user) {
     return { name: "Anas", email: "Anas@gmail.com", isActive: true };
 }
 createProfile({ name: "Anas", email: "Anas@gmail.com", isActive: true });
+var newEmployee = {
+    _id: "54321",
+    name: "Sam",
+    post: "React developer"
+};
+// we have not given creditCardDetail property in above object but still it is not complaining because it is marked as an optional
+newEmployee.name = "Sam Sharma";
