@@ -64,6 +64,27 @@ let newEmployee: Employee = {
 newEmployee.name = "Sam Sharma"
 // newEmployee._id = "123"     // it is not allowed to change as it is read only
 
+// --------------------------------------------------------------------------------------------
+
+// mix and match types
+// we can create many seperate type and we combine as many as we want.
+
+type CardNumber = {
+    cardnumber: number
+}
+
+type cardExpiryDate = {
+    expiryDate : Date
+}
+
+// bad practice because dont combine object in the same line when we are mixing types instead create type seperately and merge them
+type cardDetails = CardNumber & cardExpiryDate & {
+    cvv: number
+}
+
+// good practice
+// type cardDetails = CardNumber & cardExpiryDate
+
 export {}
 
 
