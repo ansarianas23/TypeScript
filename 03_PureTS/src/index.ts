@@ -1,16 +1,13 @@
-
-type User = {
-    name: string
+class User{
+    name :string
     email: string
-    age: number
+    city: string = ""
+
+    constructor(name: string, email: string){
+        this.name = name
+        this.email = email
+    }
 }
 
-console.log("Hello world");
-
-const user: User = {
-    name: "Anas",
-    email: "Anas@gmail.com",
-    age: 20
-}
-
-console.log(user);
+const jack = new User("Jack Sharma", "jack@gmail.com");
+jack.city = "mumbai"
