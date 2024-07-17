@@ -24,3 +24,20 @@ identityThree("5")
 function identityFour<HTK>(val: HTK):HTK{
     return val
 }
+
+
+// interface with generic
+
+interface bottle{
+    type: string
+    capacity: number
+    brand :string
+}
+
+identityFour<bottle>(
+    {
+        type: "glass bottle",
+        capacity: 2,
+        brand: "Milton"
+    }
+)
